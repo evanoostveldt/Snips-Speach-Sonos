@@ -9,7 +9,7 @@ class datetime(object):
     def askTime(self):
         now = datetime.datetime.now()
         time = "Il est {} heure {}".format(now.strftime("%H"), now.strftime("%M"))
-        requests.get('http://192.168.2.130:5005/Bureau/say/regarde%20ta%20montre/fr')
+        result = requests.get('http://192.168.2.130:5005/Bureau/say/regarde ta montre/fr')
         return time
 
     def get_askTime_string(self):
@@ -18,7 +18,7 @@ class datetime(object):
     def askDate(self):
         now = datetime.datetime.now()
         date = "Nous sommes le {} {} {} {}".format(now.strftime("%A"), now.strftime("%d"), now.strftime("%B"), now.strftime("%Y"))
-        requests.get('http://192.168.2.130:5005/Bureau/say/regarde%20le%20calendrier/fr')
+        result = requests.get('http://192.168.2.130:5005/Bureau/say/regarde le calendrier/fr')
         return date
 
     def get_askDate_string(self):
