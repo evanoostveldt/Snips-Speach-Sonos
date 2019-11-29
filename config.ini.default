@@ -1,0 +1,8 @@
+[global]
+mqtt_host=localhost
+mqtt_port=1883
+site_id=default
+locale=fr_FR
+
+[static]
+config_ver=0.2
