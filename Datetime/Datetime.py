@@ -7,10 +7,11 @@ import datetime
 class datetime(object):
 
     def askTime(self):
-        now = datetime.datetime.now()
-        time = "Il est {} heure {}".format(now.strftime("%H"), now.strftime("%M"))
         result = requests.get('http://192.168.2.130:5005/Bureau/say/regarde ta montre/fr')
-        return time
+        now = datetime.datetime.now()
+        time = "Il est {} heure {} {}".format(now.strftime("%H"), now.strftime("%M"))
+        response = time + result
+        return response
 
     def get_askTime_string(self):
         return '{}'.format(self.askTime())
