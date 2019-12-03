@@ -2,5 +2,6 @@
     "error": {
         "doNotUnderstand": "Désolé, je n'ai pas compris."
     },
-    "checkHumidity": "L'humidité actuelle est {{ humidity }}%"
+    // "Time": "L'humidité actuelle est {{ humidity }}%"
+    "Time": "JASON %"
 }
