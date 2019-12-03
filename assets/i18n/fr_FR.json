@@ -3,5 +3,6 @@
         "doNotUnderstand": "Désolé, je n'ai pas compris."
     },
     // "Time": "L'humidité actuelle est {{ humidity }}%"
-    "Time": "JASON %"
+    "Time": "Time jason fr %",
+    "Date": "Date jason fr %"
 }

@@ -8,10 +8,10 @@ class datetime(object):
 
     def askTime(self):
         # result = requests.get('http://192.168.2.130:5005/Bureau/say/regarde ta montre/fr')
-        now = datetime.datetime.now()
-        time = "Salut, Il est {} heure {} {}".format(now.strftime("%H"), now.strftime("%M"))
+        #now = datetime.datetime.now()
+        #time = "Salut, Il est {} heure {} {}".format(now.strftime("%H"), now.strftime("%M"))
         # answer = time + result
-        answer = time
+        answer = 'On y est'
         return answer
 
     def get_askTime_string(self):
