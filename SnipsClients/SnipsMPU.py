@@ -51,9 +51,12 @@ class SnipsMPU(object):
         print("Ask Time")
         #resp_texte = self.__datetime.get_askTime_string()
         resp_texte = "Snips MPU"
+        # hermes.publish_end_session(
+        #     intent_message.session_id,
+        #     self.__i18n.get('askTime', {"Time": resp_texte})
         hermes.publish_end_session(
             intent_message.session_id,
-            self.__i18n.get('askTime', {"Time": resp_texte})
+            'On va y arriver')
         )
 
     @check_confidence_score
